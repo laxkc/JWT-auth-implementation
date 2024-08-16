@@ -4,11 +4,13 @@ import authRoutes from "./src/router/auth.js";
 import protectedRoute from "./src/router/protectedRoute.js";
 import mongoose from "mongoose";
 import "dotenv/config";
+import cors from "cors";
 
 const app = express();
 
 const PORT = 3000;
 
+app.use(cors());
 app.use(bodyParser.json());
 
 app.use("/auth", authRoutes);
