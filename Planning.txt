@@ -1,0 +1,12 @@
+User Auth
+- Features to signup 
+name
+email -> verify 
+password
+
+- Signin
+name , password
+
+- auth success
+protected routes, services they can access
+
